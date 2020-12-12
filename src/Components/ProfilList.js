@@ -1,0 +1,23 @@
+import React from 'react'
+import UserCard from './UserCard'
+ import {Container , Row , Col} from 'react-bootstrap'
+
+
+
+
+const ProfilList = ({users}) => {
+  return (
+      <Container>
+        <Row>
+
+       {users.map(user => (
+        <Col key ={user.id}> 
+          <UserCard user = {user} />
+        </Col>
+       ))}
+       </Row>
+      </Container>
+  )
+}
+
+export default ProfilList
