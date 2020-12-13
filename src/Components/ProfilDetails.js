@@ -3,7 +3,7 @@ import axios from 'axios'
 import {Spinner} from 'react-bootstrap'
 
 const ProfilDetails = (props) => {
-    console.log(props.match.params.userId)
+//     console.log(props.match.params.userId)
 
   const [user , setUser] = useState({});
   const [loading , setLoading] = useState(true);
